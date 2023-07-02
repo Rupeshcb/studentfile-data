@@ -6,7 +6,7 @@
 
 int main(void)
 {
-    FILE *file = fopen("phonebook.csv", "a");
+    FILE *file = fopen("studentfile.csv", "a");
 
     string name = get_string("Name: ");
     string number = get_string("Number: ");
