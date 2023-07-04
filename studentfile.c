@@ -7,11 +7,13 @@
 int main(void)
 {
     FILE *file = fopen("studentfile.csv", "a");
-
+    string comment = "Please give your information";
+    printf("%s\n", comment);
     string name = get_string("Name: ");
     string number = get_string("Number: ");
+    string address = get_string("Address: ");
 
-    fprintf(file, "%s, %s\n", name, number);
+    fprintf(file, "%s, %s, %s\n", name, number, address);
 
     fclose(file);
 }
