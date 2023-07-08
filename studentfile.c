@@ -11,9 +11,9 @@ int main(void)
     printf("%s\n", comment);
     string name = get_string("Name: ");
     string number = get_string("Number: ");
-    string address = get_string("Address: ");
+    string city = get_string("City: ");
 
-    fprintf(file, "%s, %s, %s\n", name, number, address);
+    fprintf(file, "Name: %s, Number: %s, City: %s\n", name, number, city);
 
     fclose(file);
 }
